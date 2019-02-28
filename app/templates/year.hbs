@@ -1,0 +1,6 @@
+{{#link-to "index"}}Back To Main Page{{/link-to}}
+<ul class="list-group">
+  {{#each model.data as |shows|}}
+    {{#list-item onClick=(action "navigateTo" shows.id)}}{{shows.date}}{{/list-item}}
+  {{/each}}
+</ul>

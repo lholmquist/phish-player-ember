@@ -1,0 +1,5 @@
+<ul class="list-group">
+  {{#each model as |years|}}
+    {{#list-item onClick=(action "navigateTo" years)}}{{years}}{{/list-item}}
+  {{/each}}
+</ul>

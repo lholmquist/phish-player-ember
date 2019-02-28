@@ -1,0 +1,6 @@
+{{#link-to "year" application.currentYear}}Back To Years{{/link-to}}
+<ul class="list-group">
+  {{#each model.data.tracks as |track|}}
+    {{#list-item  onClick=(action "playTrack" track)}}{{track.title}}{{/list-item}}
+  {{/each}}
+</ul>

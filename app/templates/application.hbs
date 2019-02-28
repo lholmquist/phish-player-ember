@@ -1,5 +1,10 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">Nav Bar</a>
+</nav>
+<main role="main" class="container-fluid">
+  {{outlet}}
+</main>
+<nav class="navbar navbar-expand-md navbar-dark fixed-bottom bg-dark">
+  <div class="navbar-brand">{{currentTrack.title}}</div>
+  {{music-player track=currentTrack tracks=currentShow.tracks}}
+</nav>
